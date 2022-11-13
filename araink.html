@@ -205,11 +205,11 @@
           break;
       }
 
-      if (ejszaka != 1 && ejszaka != 69) {
+      if (ejszaka > 1 && ejszaka != 69) {
         document.getElementById("fizetendo").innerHTML = "Fizetendő:" + fizet + "Ft";
       } else if (ejszaka == 69) {
-        document.getElementById("fizetendo").innerHTML = "Nice";
-      } else {
+        document.getElementById("fizetendo").innerHTML = "Nice Fizetendő: " + fizet + "Ft";
+      } else{
         document.getElementById("fizetendo").innerHTML = "Minimum 2 éjszaka!";
       }
 
