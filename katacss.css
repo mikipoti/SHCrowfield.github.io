@@ -17,10 +17,10 @@ body {
 .menu-btn {
     margin: auto;
     position: relative;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    width: 30px;
+    width:30px;
     height: 30px;
     cursor: pointer;
     transition: all .5s ease-in-out;
@@ -73,6 +73,12 @@ body {
     transform: rotate(-45deg) translate(35px, 35px);
 
 }
+#hmenudiv{
+    display: none;
+}
+#hcol{
+    display: none;
+}
 
 /*hm*/
 
@@ -123,16 +129,17 @@ body {
 
 
 .menu {
-    display: flex;
-    justify-content: space-around;
+    display: flex ;
+    justify-content:space-around;
     align-items: center;
     background: rgba(255, 255, 255, 0.3);
     margin-top: 1%;
-    width: 30%;
+    width:fit-content;
     margin: auto;
     border-radius: 5px;
     list-style-type: none;
     text-align: center;
+    
 }
 
 .menupont {
@@ -164,7 +171,7 @@ body {
     height: max-content;
     border-radius: 5px;
     text-align: justify;
-    padding: 0%;
+    padding: 1%;
 
 }
 
@@ -200,17 +207,18 @@ body {
 
 .card {
     width: 50%;
-    margin-bottom: 5%;
-    margin: 0;
+    margin-bottom: 1%;
+    margin-top: 1%;
     padding: 0;
 }
 
 
 #icons {
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2%;
-    text-align: center;
+    flex-direction:row;
 }
 
 #cim {
@@ -299,11 +307,11 @@ body {
     }
 
     #icons {
-        display: block;
+        justify-content: space-evenly;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 2%;
-        text-align: center;
+        text-align:center;
     }
 
     .nav-item {
@@ -316,18 +324,24 @@ body {
         width: 100%;
         float: none;
         display: block;
-        margin: auto;
+        margin-bottom: 1%;
     }
 
     .menu {
         display: none;
     }
 
+.menu-btn{
+    display: flex;
+   width: max-content;
+}
+
     #hmenudiv {
 
         display: none;
         flex-direction: column;
         align-items: center;
+  
     }
 
     .hmenupont {
@@ -337,7 +351,14 @@ body {
 
     }
     #vendegkep{
-    width: 50%
+        width: 50%;
     }
+    
+    #hcol{
+        display: flex;
+        flex-direction: column;
+    }
+
+
 
 }
