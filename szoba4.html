@@ -7,39 +7,51 @@
 <link rel="stylesheet" type="text/css" href="katacss.css">
 <link rel="icon" href="icon.png">
 </head>
+
 <body>
   <a href="index.html"><img src="katavendeghaz1.png" id="vendegkep"></a>
-  <!--img src="blogo.png" id="blogo"-->
+
   <h6 id="cim">9737 Bük, Ifjúság útja utca 2. (Magyarország)</h6>
 
-  <ul class="nav justify-content-center">
 
-    <li class="nav-item">
-      <a class="nav-link active" href="index.html">Kezdőlap</a>
-    </li>
 
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Szobák</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="szoba1.html">Grand Family</a>
-        <a class="dropdown-item" href="szoba2.html">Földszinti</a>
-        <a class="dropdown-item" href="szoba3.html">Emeleti</a>
-        <a class="dropdown-item" href="szoba4.html">Három ágyas</a>
+  <div class="menu">
+    <a class="menupont" href="index.html">Kezdőlap</a>
+
+    <div class="dropdown menupont">
+      <button class="dropbtn">Szobák</button>
+      <div class="dropdown-content">
+        <a href="szoba1.html">Grand Family</a>
+        <a href="szoba2.html">Földszinti</a>
+        <a href="szoba3.html">Emeleti</a>
+        <a href="szoba4.html">Három ágyas</a>
+
       </div>
-    </li>
+    </div>
 
-    <li class="nav-item">
-      <a class="nav-link" href="kapcsolat.html">Kapcsolat</a>
-    </li>
+    <a class="menupont" href="kapcsolat.html">Kapcsolat</a>
+    <a class="menupont" href="araink.html">Áraink</a>
+  </div>
 
-    <li class="nav-item">
-      <a class="nav-link" href="araink.html">Áraink</a>
-    </li>
 
-   <!-- li class="nav-item">
-      <a class="nav-link" href="programok.html">Programok</a>
-    </li-->
-  </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-9" id="hcol">
+
+        <div class="menu-btn">
+          <div class="menu-btn_burger"></div>
+        </div>
+        <div id="hmenudiv">
+          <a class="hmenupont" href="index.html">Kezdőlap</a>
+          <a class="hmenupont" href="szoba1.html">Grand Family</a>
+          <a class="hmenupont" href="szoba2.html">Földszinti</a>
+          <a class="hmenupont" href="szoba3.html">Emeleti</a>
+          <a class="hmenupont" href="szoba4.html">Három ágyas</a>
+          <a class="hmenupont" href="kapcsolat.html">Kapcsolat</a>
+          <a class="hmenupont" href="araink.html">Áraink</a>
+        </div>
+      </div>
+    </div>
 
   <div class="container">
     <div class="row">
@@ -80,26 +92,22 @@
           </button>
         </div>
         
-        <h1 id="lefoglalom">Lefoglalom</h1>
-        <table id="rent-table">
-          <tr>
-            <td>
+        <h1 id="lefoglalom">Foglalási lehetőségek:</h1>
+        <div id="rent-table">
+        
               <a href="https://www.booking.com/hotel/hu/kata-vendeghaz-buk.hu.html"><img src="booking.png" class="rent"></a>
-            </td>
-            <td>
+          
               <a href="https://szallas.hu/kata-vendeghaz-buk"><img src="szallas.png" class="rent"></a>
-            </td>
-          </tr>
-        </table>
+          
+        </div>
 
-        <table id="icons-table">
-          <tr>
-            <td><img src="parkicon.png" class="icon"> Parkolás</td>
-            <td><img src="wifiicon.png" class="icon"> Wifi</td>
-            <td><img src="cardicon.png" class="icon"></td>
-            <td><img src="airicon.png" class="icon"> Légkondícionálás</td>    
-          </tr>
-        </table>
+        <div id="icons">
+          <img src="parkicon.png" class="icon"> Parkolás
+          <img src="wifiicon.png" class="icon"> Wifi
+          <img src="cardicon.png" class="icon">
+          <img src="airicon.png" class="icon"> Légkondícionálás
+        </div>
+        <footer id="footer">Powered by Farkas Kata Design: SHC</footer>
 
       </div>
     </div>

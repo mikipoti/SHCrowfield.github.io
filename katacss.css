@@ -8,7 +8,8 @@ body {
     background-image: url("fejlec.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment:fixed;
+
 
 }
 
@@ -134,11 +135,12 @@ body {
     align-items: center;
     background: rgba(255, 255, 255, 0.3);
     margin-top: 1%;
-    width:fit-content;
+    width:50%;
     margin: auto;
     border-radius: 5px;
     list-style-type: none;
     text-align: center;
+    font-size: larger;
     
 }
 
@@ -210,6 +212,7 @@ body {
     margin-bottom: 1%;
     margin-top: 1%;
     padding: 0;
+    font-size: medium;
 }
 
 
@@ -233,8 +236,12 @@ body {
 }
 
 #rent-table {
-    width: 85%;
+    justify-content: center;
+    text-align: center;
+    
 }
+
+
 
 #rent-table td {
     text-align: center;
@@ -292,9 +299,7 @@ body {
     opacity: 90%;
 }
 
-#nixfooter {
-    padding: 1%;
-}
+
 
 
 
@@ -307,11 +312,12 @@ body {
     }
 
     #icons {
-        justify-content: space-evenly;
-        margin-left: auto;
-        margin-right: auto;
+        display: unset;
+        display: flex;
+        flex-direction: column;
+
         margin-bottom: 2%;
-        text-align:center;
+
     }
 
     .nav-item {
@@ -341,6 +347,7 @@ body {
         display: none;
         flex-direction: column;
         align-items: center;
+        font-size: xx-large;
   
     }
 
@@ -350,6 +357,13 @@ body {
         position: relative;
 
     }
+    .hmenupont:hover{
+        background-color:rgba(255, 255, 255, 0.6);
+        border-radius: 5px;
+        padding-left:15%;
+        padding-right: 15%;
+    }
+
     #vendegkep{
         width: 50%;
     }
@@ -358,7 +372,16 @@ body {
         display: flex;
         flex-direction: column;
     }
+    #vendeghaz{
+        padding: 5%;
+    }
 
+    #szobakszoveg{
+        padding: 5%;
+    }
+    body{
+        font-size: small;
+    }
 
 
 }

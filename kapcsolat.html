@@ -19,55 +19,68 @@
 
 <body>
   <a href="index.html"><img src="katavendeghaz1.png" id="vendegkep"></a>
+
   <h6 id="cim">9737 Bük, Ifjúság útja utca 2. (Magyarország)</h6>
 
-  <ul class="nav justify-content-center">
 
-    <li class="nav-item">
-      <a class="nav-link active" href="index.html">Kezdőlap</a>
-    </li>
 
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Szobák</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="szoba1.html">Grand Family</a>
-        <a class="dropdown-item" href="szoba2.html">Földszinti</a>
-        <a class="dropdown-item" href="szoba3.html">Emeleti</a>
-        <a class="dropdown-item" href="szoba4.html">Három ágyas</a>
+  <div class="menu">
+    <a class="menupont" href="index.html">Kezdőlap</a>
+
+    <div class="dropdown menupont">
+      <button class="dropbtn">Szobák</button>
+      <div class="dropdown-content">
+        <a href="szoba1.html">Grand Family</a>
+        <a href="szoba2.html">Földszinti</a>
+        <a href="szoba3.html">Emeleti</a>
+        <a href="szoba4.html">Három ágyas</a>
+
       </div>
-    </li>
+    </div>
 
-    <li class="nav-item">
-      <a class="nav-link" href="kapcsolat.html">Kapcsolat</a>
-    </li>
+    <a class="menupont" href="kapcsolat.html">Kapcsolat</a>
+    <a class="menupont" href="araink.html">Áraink</a>
+  </div>
 
-    <li class="nav-item">
-      <a class="nav-link" href="araink.html">Áraink</a>
-    </li>
-
-    <!-- li class="nav-item">
-      <a class="nav-link" href="programok.html">Programok</a>
-    </li-->
-  </ul>
 
   <div class="container">
     <div class="row">
-      <div class="col-9" id="vendegszobak">
+      <div class="col-9" id="hcol">
+
+        <div class="menu-btn">
+          <div class="menu-btn_burger"></div>
+        </div>
+        <div id="hmenudiv">
+          <a class="hmenupont" href="index.html">Kezdőlap</a>
+          <a class="hmenupont" href="szoba1.html">Grand Family</a>
+          <a class="hmenupont" href="szoba2.html">Földszinti</a>
+          <a class="hmenupont" href="szoba3.html">Emeleti</a>
+          <a class="hmenupont" href="szoba4.html">Három ágyas</a>
+          <a class="hmenupont" href="kapcsolat.html">Kapcsolat</a>
+          <a class="hmenupont" href="araink.html">Áraink</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-9">
         <h1>Kapcsolat</h1>
         <p id="email">Email cím: szallas+kata-vendeghaz-buk@szallas.hu</p>
 
         <div id="map"></div>
 
 
-        <table id="icons-table">
-          <tr>
-            <td><img src="parkicon.png" class="icon"> Parkolás</td>
-            <td><img src="wifiicon.png" class="icon"> Wifi</td>
-            <td><img src="cardicon.png" class="icon"> </td>
-            <td><img src="airicon.png" class="icon"> Légkondícionálás</td>
-          </tr>
-        </table>
 
+        <div id="icons">
+          <img src="parkicon.png" class="icon"> Parkolás
+          <img src="wifiicon.png" class="icon"> Wifi
+          <img src="cardicon.png" class="icon">
+          <img src="airicon.png" class="icon"> Légkondícionálás
+        </div>
+
+        <footer id="footer">Powered by Farkas Kata Design: SHC</footer>
 
       </div>
     </div>
@@ -86,9 +99,9 @@
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-   var marker = L.marker([47.381169465270744, 16.758637988456048]).addTo(map);
+    var marker = L.marker([47.381169465270744, 16.758637988456048]).addTo(map);
 
- 
+
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
