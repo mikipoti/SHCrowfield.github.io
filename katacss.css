@@ -271,6 +271,22 @@ body {
     margin-left: auto;
     margin-bottom: 2%;
 }
+#gmaps{
+display: flex;
+font-size: larger;
+justify-content:center;
+margin-bottom: 2%;
+
+
+}
+
+#gmapskep{
+    height: 10vh;
+   
+    margin-bottom: 2%;
+    border-radius: 5%;
+    
+}
 
 #fizetendo {
     font-weight: bold;
