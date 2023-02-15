@@ -265,8 +265,8 @@ body {
 }
 
 #map {
-    height: 80vh;
-    width: 80vh;
+    height: fit-content;
+    width: fit-content;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 2%;
